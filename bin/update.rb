@@ -12,8 +12,12 @@ def next_version
   @next_version ||= begin
     major, minor, patch = config["gemVersion"].split(".")
     case ARGV[0]
-    when "major" then major = major.to_i + 1
-    when "minor" then minor = minor.to_i + 1
+    when "major"
+      major = major.to_i + 1
+      minor = patch = 0
+    when "minor"
+      minor = minor.to_i + 1
+      patch = 0
     when "patch" then patch = patch.to_i + 1
     else
       puts "you need to provide one argument: patch, minor, or major"
@@ -30,5 +34,5 @@ def rewrite_config
 end
 
 rewrite_config
-puts "run swagger codegen"
-`swagger-codegen generate -i #{SWAGGER_SOURCE} -l ruby -o . -c config.json`
+# `swagger-codegen generate --additional-properties library=faraday -i #{SWAGGER_SOURCE} -l ruby -o . -c config.json`
+`java -jar openapi-generator-cli.jar generate -g ruby -i #{SWAGGER_SOURCE} -o . -c config.json --additional-properties library=faraday`

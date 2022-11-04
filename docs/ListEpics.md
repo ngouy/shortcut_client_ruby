@@ -1,7 +1,18 @@
 # Shortcut::ListEpics
 
 ## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**includes_description** | **BOOLEAN** | A true/false boolean indicating whether to return Epics with their descriptions. | [optional] 
+
+| Name | Type | Description | Notes |
+| ---- | ---- | ----------- | ----- |
+| **includes_description** | **Boolean** | A true/false boolean indicating whether to return Epics with their descriptions. | [optional] |
+
+## Example
+
+```ruby
+require 'shortcut_client_ruby'
+
+instance = Shortcut::ListEpics.new(
+  includes_description: null
+)
+```
 
