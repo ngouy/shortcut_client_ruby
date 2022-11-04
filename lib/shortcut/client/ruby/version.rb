@@ -3,7 +3,7 @@
 module Shortcut
   module Client
     module Ruby
-      VERSION = "0.0.3"
+      VERSION = "0.0.4"
     end
   end
 end

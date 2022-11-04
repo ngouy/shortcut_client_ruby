@@ -1,7 +1,7 @@
 {
   "gemName": "shortcut_client_ruby",
   "moduleName": "Shortcut",
-  "gemVersion": "0.0.3",
+  "gemVersion": "0.0.4",
   "gitUserId": "ngouy",
   "gitRepoId": "shortcut_client_ruby"
 }
