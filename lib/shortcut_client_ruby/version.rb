@@ -10,5 +10,5 @@ Swagger Codegen version: 3.0.35
 =end
 
 module Shortcut
-  VERSION = '0.0.2'
+  VERSION = '0.0.3'
 end

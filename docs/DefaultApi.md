@@ -4762,8 +4762,7 @@ Shortcut.configure do |config|
 end
 
 api_instance = Shortcut::DefaultApi.new
-body = Shortcut::UpdateEntityTemplate.new # UpdateEntityTemplate | Request parameters for changing either a template's name or any of
-  the attributes it is designed to pre-populate.
+body = Shortcut::UpdateEntityTemplate.new # UpdateEntityTemplate | Request parameters for changing either a template's name or any of the attributes it is designed to pre-populate.
 entity_template_public_id = '38400000-8cf0-11bd-b23e-10b96e4ef00d' # String | The unique ID of the template to be updated.
 
 
@@ -4780,8 +4779,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**UpdateEntityTemplate**](UpdateEntityTemplate.md)| Request parameters for changing either a template&#x27;s name or any of
-  the attributes it is designed to pre-populate. | 
+ **body** | [**UpdateEntityTemplate**](UpdateEntityTemplate.md)| Request parameters for changing either a template&#x27;s name or any of  the attributes it is designed to pre-populate. |
  **entity_template_public_id** | [**String**](.md)| The unique ID of the template to be updated. | 
 
 ### Return type

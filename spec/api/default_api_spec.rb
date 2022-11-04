@@ -1098,8 +1098,7 @@ describe 'DefaultApi' do
   # unit tests for update_entity_template
   # Update Entity Template
   # Update an entity template&#x27;s name or its contents.
-  # @param body Request parameters for changing either a template&#x27;s name or any of
-  the attributes it is designed to pre-populate.
+  # @param body Request parameters for changing either a template&#x27;s name or any of the attributes it is designed to pre-populate.
   # @param entity_template_public_id The unique ID of the template to be updated.
   # @param [Hash] opts the optional parameters
   # @return [EntityTemplate]
